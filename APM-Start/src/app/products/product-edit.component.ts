@@ -28,6 +28,8 @@ export class ProductEditComponent implements OnInit {
   }
 
   onProductRetrieved(product: IProduct): void {
+    this.product = product;
+
     if (this.product.id === 0) {
       this.pageTitle = 'Add Product';
     } else {
